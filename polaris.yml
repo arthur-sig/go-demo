@@ -11,6 +11,9 @@ capture:
     - shell: [go, clean]
     buildCommands:
     - shell: [go, build]
+    coverity:
+      skipFiles:
+      - .*/mod/.*
   fileSystem:
     ears:
       extensions: [ear]
